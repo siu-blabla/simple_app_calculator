@@ -64,13 +64,16 @@ while True:         # Loop command for the whole program's loop function
 # Looping (Ask user if they want to try again)
     while True:
         try:
+            print('-------------------------------------------------------------')
             looping = input('Do you want to try again? (y/n): ')
             if looping in ['y', 'n']:
+                print('-------------------------------------------------------------')
                 break
             else:
                 print("\033[91mInvalid input! Please enter 'y' for yes or 'n' for no.\033[0m")
         except ValueError:
             print("\033[91mInvalid input! Please enter 'y' for yes and 'n' for no.\033[0m")
+            print('-------------------------------------------------------------')
     if looping != "y":
         print("\033[1mEnd of program.\nThank you for using this simple calculator app!\033[0m")
         break
