@@ -1,4 +1,6 @@
 # Introduction
+print("\033[93m\033[1m----------------THIS IS A SIMPLE CALCULATOR APP----------------")
+print()
 # Display Options
 # Ask the user to choose their desired math operation
 # Ask user to enter the first number
