@@ -31,5 +31,15 @@ while True:         # Loop command for the whole program's loop function
             print("\033[91mValueError: Invalid input! Please enter a valid number\033[0m.")
 
 # Ask user to enter the second number
+    while True:
+        try:
+            num_2 = float(input("Please enter the second number: "))
+            if choice == 4 and num_2 == 0:
+                print("\033[91mZeroDivisionError: Division by zero is not allowed.\033[0m")
+                continue
+            break
+        except ValueError:
+            print("\033[91mValueError: Invalid input! Please enter a valid number.\033[0m")
+
 # Execute the chosen math operation and display the output
 # Looping (Ask user if they want to try again)
