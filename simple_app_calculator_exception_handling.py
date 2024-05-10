@@ -23,6 +23,13 @@ while True:         # Loop command for the whole program's loop function
             print("\033[91m\033[4mInvalid input! Please enter a valid number.\033[0m")
 
 # Ask user to enter the first number
+    while True:
+        try:
+            num_1 = float(input("Please enter the first number: "))
+            break
+        except ValueError:
+            print("\033[91mValueError: Invalid input! Please enter a valid number\033[0m.")
+
 # Ask user to enter the second number
 # Execute the chosen math operation and display the output
 # Looping (Ask user if they want to try again)
